@@ -1,4 +1,5 @@
 import Layout from "./components/ui/Layout";
+import { useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,9 +12,9 @@ import Login from '../src/components/Auth/Login'
 import SignUp from '../src/components/Auth/SignUp'
 import Receiver from "./components/Home/Receiver";
 function App() {
+   
   return (
     <Router>
-      
     <Layout>
       <Routes>
         <Route exact path='/' element={<Home/>}/>
